@@ -1,0 +1,107 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#contenido {
+  transition: margin-left .5s;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.red-darken{
+  background-color: #630c12;
+}
+/*para que la navbar sea responsive*/
+img{
+  max-width:100%;
+  width:auto;
+  height:auto;}
+.bg-black{
+  background-color: black;
+  background-position: center;
+}
+
+/*Ocultar el gif para moviles*/ 
+@media screen and (max-width: 900px) {
+#imgLogin{
+display:none;
+}
+}
+.input-container {
+  margin: 3em auto;
+  max-width: 300px;
+  background-color: #EDEDED;
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+}
+
+/*File input*/
+input[type='file'] {
+  display: none;
+}
+
+.file-info {
+  font-size: 1em;
+}
+
+.browse-btn {
+  background: #50a3cd;
+  color: #fff;
+  min-height: 35px;
+  padding: 10px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+}
+
+.browse-btn:hover {
+  background: #0093ff;
+}
+
+@media (max-width: 300px) {
+  button {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+  
+  .file-info {
+    display: block;
+    margin: 10px 5px;
+  }
+}
